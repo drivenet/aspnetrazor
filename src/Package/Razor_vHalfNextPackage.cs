@@ -8,7 +8,7 @@ using Microsoft.Web.Editor.Host;
 namespace AspNet.Razor_vHalfNext
 {
     [PackageRegistration(UseManagedResourcesOnly = true)]
-    [InstalledProductRegistration("#110", "#112", "1.0")]
+    [InstalledProductRegistration("#110", "#112", "1.1")]
     [Guid(PackageGuidString)]
     [ProvideAutoLoad(UIContextGuids.SolutionExists)]
     public sealed class Razor_vHalfNextPackage : Package

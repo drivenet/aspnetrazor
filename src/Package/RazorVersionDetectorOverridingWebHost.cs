@@ -81,6 +81,6 @@ namespace AspNet.Razor_vHalfNext
 
         public Microsoft.Web.Editor.ICommandTarget TranslateCommandTarget(Microsoft.VisualStudio.Text.Editor.ITextView textView, object commandTarget) => _inner.TranslateCommandTarget(textView, commandTarget);
 
-        public object TranslateToHostCommandTarget(Microsoft.VisualStudio.Text.Editor.ITextView textView, object commandTarget) => _inner.TranslateCommandTarget(textView, commandTarget);
+        public object TranslateToHostCommandTarget(Microsoft.VisualStudio.Text.Editor.ITextView textView, object commandTarget) => _inner.TranslateToHostCommandTarget(textView, commandTarget);
     }
 }
