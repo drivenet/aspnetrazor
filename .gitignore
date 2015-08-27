@@ -1,0 +1,5 @@
+[Bb]in
+src/[Oo]bj
+*.suo
+*.csproj.user
+packages
