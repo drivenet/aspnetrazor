@@ -121,6 +121,6 @@
     <value>ASP.NET Razor syntax "vHalfNext"</value>
   </data>
   <data name="112" xml:space="preserve">
-    <value>This extension adds support for ASP.NET Razor syntax "vHalfNext" (https://github.com/onyxmaster/aspnetwebstack) to Visual Studio.</value>
+    <value>This extension adds support for ASP.NET Razor syntax "vHalfNext" (https://github.com/drivenet/aspnetwebstack) to Visual Studio.</value>
   </data>
 </root>
