@@ -45,11 +45,10 @@ namespace AspNet.Razor_vHalfNext
                     if (getExplicitWebPagesVersionMethod != null)
                     {
                         var fileName = textBuffer.GetFileName();
-                        IVsHierarchy hierarchy;
-                        uint itemId;
-                        if (Microsoft.VisualStudio.Html.Package.Utilities.ProjectUtilities.TryGetHierarchy(fileName, out hierarchy, out itemId))
+                        var projectData = Microsoft.VisualStudio.Html.Package.Project.ProjectData.FromFileNameAndPath(fileName);
+                        if (projectData != null)
                         {
-                            var absolutePath = VsWebUrl.CreateAppUrl(hierarchy, itemId).AbsolutePath;
+                            var absolutePath = VsWebUrl.CreateAppUrl(projectData.Hierarchy, projectData.ItemID).AbsolutePath;
                             try
                             {
                                 version = (Version)getExplicitWebPagesVersionMethod.Invoke(null, new object[] { absolutePath });
