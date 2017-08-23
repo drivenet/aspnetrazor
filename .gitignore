@@ -3,3 +3,4 @@ src/[Oo]bj
 *.suo
 *.csproj.user
 packages
+/.vs/
