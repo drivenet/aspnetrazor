@@ -4,7 +4,6 @@ using System.Reflection;
 
 using Microsoft.Html.Editor.ContainedLanguage.Razor.Def;
 using Microsoft.VisualStudio.Html.Package.Workspace;
-using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio.Text;
 using Microsoft.Web.Editor.EditorHelpers;
 

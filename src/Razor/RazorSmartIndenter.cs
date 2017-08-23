@@ -9,7 +9,6 @@ using Microsoft.Html.Editor.Settings;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
-using Microsoft.Web.Core.Composition;
 using Microsoft.Web.Core.Formatting;
 using Microsoft.Web.Editor.Host;
 using Microsoft.Web.Editor.Services;
