@@ -4,6 +4,7 @@ using System.ComponentModel.Composition.Hosting;
 using System.Threading;
 
 using Microsoft.VisualStudio.Text;
+using Microsoft.VisualStudio.Threading;
 using Microsoft.Web.Editor.Host;
 using Microsoft.Web.Editor.Undo;
 
@@ -34,6 +35,8 @@ namespace AspNet.Razor_vHalfNext
         public System.IServiceProvider ServiceProvider => _inner.ServiceProvider;
 
         public string UserFolder => _inner.UserFolder;
+
+        public JoinableTaskFactory JoinableTaskFactory => _inner.JoinableTaskFactory;
 
         public event EventHandler<EventArgs> Idle
         {
