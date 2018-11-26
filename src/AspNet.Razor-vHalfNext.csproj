@@ -217,6 +217,9 @@
       <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=5.12.6.0, Culture=neutral, PublicKeyToken=2f9147bba06de483, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dnet.AspNet.3.12.6\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Razor, Version=3.10.0.0, Culture=neutral, PublicKeyToken=2f9147bba06de483, processorArchitecture=MSIL">
       <HintPath>..\packages\Dnet.AspNet.3.12.6\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
