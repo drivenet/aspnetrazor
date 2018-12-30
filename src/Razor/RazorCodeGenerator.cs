@@ -312,7 +312,7 @@ namespace AspNet.Razor_vHalfNext
 				stopwatch.Start();
 				while (!IsReady && stopwatch.ElapsedMilliseconds < 5000L)
 				{
-                    Dispatcher.CurrentDispatcher.Invoke(() => { }, DispatcherPriority.Input);
+                    Dispatcher.CurrentDispatcher.Invoke(() => { }, DispatcherPriority.Background);
 				}
 			}
 		}
