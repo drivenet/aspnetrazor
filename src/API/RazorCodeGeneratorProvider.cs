@@ -1,10 +1,10 @@
 using System;
 using System.ComponentModel.Composition;
 
-using Microsoft.Html.Editor.ContainedLanguage.Razor.Def;
-using Microsoft.Html.Editor.Razor;
 using Microsoft.VisualStudio.Text;
-using Microsoft.Web.Core.Composition;
+using Microsoft.WebTools.Languages.Html.Editor.ContainedLanguage.Razor.Def;
+using Microsoft.WebTools.Languages.Html.Editor.Razor;
+using Microsoft.WebTools.Languages.Shared.Composition;
 
 namespace AspNet.Razor_vHalfNext
 {

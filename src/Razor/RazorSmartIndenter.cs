@@ -4,14 +4,14 @@ using System.Diagnostics.CodeAnalysis;
 using System.Web.Razor.Parser.SyntaxTree;
 using System.Web.Razor.Text;
 
-using Microsoft.Html.Editor.ContentType.Def;
-using Microsoft.Html.Editor.Settings;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
-using Microsoft.Web.Core.Formatting;
-using Microsoft.Web.Editor.Host;
-using Microsoft.Web.Editor.Services;
+using Microsoft.WebTools.Languages.Html.Editor.ContentType.Def;
+using Microsoft.WebTools.Languages.Html.Editor.Settings;
+using Microsoft.WebTools.Languages.Shared.Editor.Host;
+using Microsoft.WebTools.Languages.Shared.Editor.Services;
+using Microsoft.WebTools.Languages.Shared.Formatting;
 
 namespace AspNet.Razor_vHalfNext
 {

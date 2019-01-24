@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using System.Web.Razor.Parser.SyntaxTree;
 
-using Microsoft.Html.Core.Classify;
-using Microsoft.Html.Editor.Document;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
-using Microsoft.Web.Editor.Host;
-using Microsoft.Web.Editor.Services;
+using Microsoft.WebTools.Languages.Html.Classify;
+using Microsoft.WebTools.Languages.Html.Editor.Document;
+using Microsoft.WebTools.Languages.Shared.Editor.Host;
+using Microsoft.WebTools.Languages.Shared.Editor.Services;
 
 namespace AspNet.Razor_vHalfNext
 {

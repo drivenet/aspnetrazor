@@ -1,10 +1,10 @@
 using System.ComponentModel.Composition;
 using System.Diagnostics.CodeAnalysis;
 
-using Microsoft.Html.Editor.Razor;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
-using Microsoft.Web.Core.Composition;
+using Microsoft.WebTools.Languages.Html.Editor.Razor;
+using Microsoft.WebTools.Languages.Shared.Composition;
 
 namespace AspNet.Razor_vHalfNext
 {

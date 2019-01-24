@@ -2,7 +2,7 @@
 using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
 
-using Microsoft.Html.Editor.ContainedLanguage.Razor.Def;
+using Microsoft.WebTools.Languages.Html.Editor.ContainedLanguage.Razor.Def;
 
 namespace AspNet.Razor_vHalfNext
 {

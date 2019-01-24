@@ -7,8 +7,8 @@ using System.Web.Razor.Text;
 using System.Web.WebPages.Razor;
 using System.Web.WebPages.Razor.Configuration;
 
-using Microsoft.Html.Editor.Settings;
-using Microsoft.Web.Core.Formatting;
+using Microsoft.WebTools.Languages.Html.Editor.Settings;
+using Microsoft.WebTools.Languages.Shared.Formatting;
 
 namespace AspNet.Razor_vHalfNext
 {

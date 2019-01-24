@@ -5,8 +5,9 @@ using System.Threading;
 
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Threading;
-using Microsoft.Web.Editor.Host;
-using Microsoft.Web.Editor.Undo;
+using Microsoft.Web.Editor;
+using Microsoft.WebTools.Languages.Shared.Editor.Host;
+using Microsoft.WebTools.Languages.Shared.Editor.Undo;
 
 namespace AspNet.Razor_vHalfNext
 {
@@ -64,6 +65,11 @@ namespace AspNet.Razor_vHalfNext
             }
         }
 
+        public bool CheckAccess()
+        {
+            return _inner.CheckAccess();
+        }
+
         public ICompoundUndoAction CreateCompoundAction(Microsoft.VisualStudio.Text.Editor.ITextView textView, ITextBuffer textBuffer) => _inner.CreateCompoundAction(textView, textBuffer);
 
         public void DispatchOnUIThread(Action action, System.Windows.Threading.DispatcherPriority priority) => _inner.DispatchOnUIThread(action, priority);
@@ -80,9 +86,14 @@ namespace AspNet.Razor_vHalfNext
 
         public bool ShowHelp(string topicName) => _inner.ShowHelp(topicName);
 
+        public void ThrowIfNotOnUIThread(string callerMemberName = "")
+        {
+            _inner.ThrowIfNotOnUIThread(callerMemberName);
+        }
+
         public void TraceEvent(int eventId, object parameter) => _inner.TraceEvent(eventId, parameter);
 
-        public Microsoft.Web.Editor.ICommandTarget TranslateCommandTarget(Microsoft.VisualStudio.Text.Editor.ITextView textView, object commandTarget) => _inner.TranslateCommandTarget(textView, commandTarget);
+        public ICommandTarget TranslateCommandTarget(Microsoft.VisualStudio.Text.Editor.ITextView textView, object commandTarget) => _inner.TranslateCommandTarget(textView, commandTarget);
 
         public object TranslateToHostCommandTarget(Microsoft.VisualStudio.Text.Editor.ITextView textView, object commandTarget) => _inner.TranslateToHostCommandTarget(textView, commandTarget);
     }

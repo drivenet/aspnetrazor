@@ -8,31 +8,30 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Web.Razor;
 using System.Web.Razor.Generator;
 using System.Web.Razor.Parser.SyntaxTree;
 using System.Web.Razor.Text;
 using System.Windows.Threading;
 
-using Microsoft.Html.Core.Artifacts;
-using Microsoft.Html.Core.Tree.Extensions;
-using Microsoft.Html.Editor.Completion;
-using Microsoft.Html.Editor.ContainedLanguage.Common;
-using Microsoft.Html.Editor.ContainedLanguage.Razor;
-using Microsoft.Html.Editor.ContainedLanguage.Razor.Def;
-using Microsoft.Html.Editor.ContentType.Def;
-using Microsoft.Html.Editor.Document;
-using Microsoft.Html.Editor.Projection;
-using Microsoft.Html.Editor.Razor;
 using Microsoft.VisualStudio.Language.Intellisense;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Projection;
-using Microsoft.Web.Core.Utility;
-using Microsoft.Web.Editor.Controller;
-using Microsoft.Web.Editor.Host;
-using Microsoft.Web.Editor.Services;
+using Microsoft.WebTools.Languages.Html.Artifacts;
+using Microsoft.WebTools.Languages.Html.Editor.Completion;
+using Microsoft.WebTools.Languages.Html.Editor.ContainedLanguage.Common;
+using Microsoft.WebTools.Languages.Html.Editor.ContainedLanguage.Razor;
+using Microsoft.WebTools.Languages.Html.Editor.ContainedLanguage.Razor.Def;
+using Microsoft.WebTools.Languages.Html.Editor.ContentType.Def;
+using Microsoft.WebTools.Languages.Html.Editor.Document;
+using Microsoft.WebTools.Languages.Html.Editor.Projection;
+using Microsoft.WebTools.Languages.Html.Editor.Razor;
+using Microsoft.WebTools.Languages.Html.Tree.Extensions;
+using Microsoft.WebTools.Languages.Shared.Editor.Controller;
+using Microsoft.WebTools.Languages.Shared.Editor.Host;
+using Microsoft.WebTools.Languages.Shared.Editor.Services;
+using Microsoft.WebTools.Languages.Shared.Utility;
 
 namespace AspNet.Razor_vHalfNext
 {

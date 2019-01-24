@@ -4,7 +4,7 @@ using System.Threading;
 
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.Web.Editor.Host;
+using Microsoft.WebTools.Languages.Shared.Editor.Host;
 
 namespace AspNet.Razor_vHalfNext
 {

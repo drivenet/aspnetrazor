@@ -2,8 +2,8 @@
 using System.Collections.Concurrent;
 using System.Reflection;
 
-using Microsoft.Html.Editor.ContainedLanguage.Razor.Def;
 using Microsoft.VisualStudio.Text;
+using Microsoft.WebTools.Languages.Html.Editor.ContainedLanguage.Razor.Def;
 
 namespace AspNet.Razor_vHalfNext
 {

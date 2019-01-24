@@ -1,10 +1,10 @@
 using System.Web.Razor.Parser.SyntaxTree;
 
-using Microsoft.Html.Core.Artifacts;
+using Microsoft.WebTools.Languages.Html.Artifacts;
 
 namespace AspNet.Razor_vHalfNext
 {
-	public static class Extensions
+    public static class Extensions
 	{
 		public static AdditionalContentInclusion GetTrailingInclusion(this Span span)
 		{
