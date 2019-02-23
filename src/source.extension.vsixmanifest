@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="AspNetRazorvHalfNext.c9f35a08-effa-4212-b7b6-9a170cc4d444" Version="5.0" Language="en-US" Publisher="Aristarkh Zagorodnikov" />
+        <Identity Id="AspNetRazorvHalfNext.c9f35a08-effa-4212-b7b6-9a170cc4d444" Version="5.1" Language="en-US" Publisher="Aristarkh Zagorodnikov" />
         <DisplayName>ASP.NET Razor syntax 'vHalfNext'</DisplayName>
         <Description xml:space="preserve">This extension adds support for ASP.NET Razor syntax "vHalfNext" (https://github.com/drivenet/aspnetwebstack) to Visual Studio.</Description>
-        <Preview>true</Preview>
     </Metadata>
     <Installation AllUsers="true">
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0,17.0)" />
