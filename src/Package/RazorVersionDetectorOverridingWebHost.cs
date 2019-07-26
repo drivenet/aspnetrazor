@@ -2,7 +2,7 @@
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.Threading;
-
+using System.Threading.Tasks;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Threading;
 using Microsoft.Web.Editor;
@@ -65,14 +65,13 @@ namespace AspNet.Razor_vHalfNext
             }
         }
 
-        public bool CheckAccess()
-        {
-            return _inner.CheckAccess();
-        }
+        public bool CheckAccess() => _inner.CheckAccess();
 
         public ICompoundUndoAction CreateCompoundAction(Microsoft.VisualStudio.Text.Editor.ITextView textView, ITextBuffer textBuffer) => _inner.CreateCompoundAction(textView, textBuffer);
 
         public void DispatchOnUIThread(Action action, System.Windows.Threading.DispatcherPriority priority) => _inner.DispatchOnUIThread(action, priority);
+
+        public Task<ICompositionService> GetCompositionServiceAsync() => _inner.GetCompositionServiceAsync();
 
         public Uri GetFileName(Microsoft.VisualStudio.Text.Editor.ITextView textView) => _inner.GetFileName(textView);
 
@@ -86,12 +85,11 @@ namespace AspNet.Razor_vHalfNext
 
         public bool ShowHelp(string topicName) => _inner.ShowHelp(topicName);
 
-        public void ThrowIfNotOnUIThread(string callerMemberName = "")
-        {
-            _inner.ThrowIfNotOnUIThread(callerMemberName);
-        }
+        public void ThrowIfNotOnUIThread(string callerMemberName = "") => _inner.ThrowIfNotOnUIThread(callerMemberName);
 
         public void TraceEvent(int eventId, object parameter) => _inner.TraceEvent(eventId, parameter);
+
+        public Task TraceEventAsync(int eventId, object parameter) => _inner.TraceEventAsync(eventId, parameter);
 
         public ICommandTarget TranslateCommandTarget(Microsoft.VisualStudio.Text.Editor.ITextView textView, object commandTarget) => _inner.TranslateCommandTarget(textView, commandTarget);
 
